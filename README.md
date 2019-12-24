@@ -22,7 +22,9 @@
     - __views__
         - __templates__
             - __home__
-                - [index.pug](src/views/templates/home/index.pug)
+                - [test-section.pug](src/views/templates/home/test-section.pug)
+             - __contact-us__
+                 - [test-section.pug](src/views/templates/contact-us/test-section.pug)
         - [contact-us.pug](src/views/home.pug)
         - [home.pug](src/views/contact-us.pug)
             
