@@ -4,7 +4,7 @@
   "main": "src/views/home.pug",
   "license": "MIT",
   "scripts": {
-    "start": "yarn cache clean && rm -rf dist && parcel src/views/home.pug --open",
+    "start": "yarn cache clean && rm -rf dist && parcel src/views/home.pug --port 8080 --open ",
     "build:parcel": "parcel build src/views/home.pug -d build --public-url ./ --out-file index.html",
     "build": "yarn cache clean && rm -rf build && yarn build:parcel"
   },
