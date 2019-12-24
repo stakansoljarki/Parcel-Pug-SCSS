@@ -1,11 +1,12 @@
 {
   "name": "Parcel-Pug-SASS",
   "version": "1.0.0",
-  "main": "index.pug",
+  "main": "src/views/home.pug",
   "license": "MIT",
   "scripts": {
-    "start": "parcel index.pug --open",
-    "build": "parcel build index.pug"
+    "start": "yarn cache clean && rm -rf dist && parcel src/views/home.pug --open",
+    "build:parcel": "parcel build src/views/home.pug -d build --public-url ./ --out-file index.html",
+    "build": "yarn cache clean && rm -rf build && yarn build:parcel"
   },
   "dependencies": {
     "@babel/preset-react": "^7.7.4",
@@ -19,5 +20,4 @@
     "pug": "^2.0.4",
     "sass": "^1.24.0"
   }
-
 }
