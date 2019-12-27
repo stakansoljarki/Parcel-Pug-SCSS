@@ -6,7 +6,20 @@
   "scripts": {
     "start": "yarn cache clean && rm -rf dist && parcel src/views/home.pug --port 8080 --open ",
     "build:parcel": "parcel build src/views/home.pug -d build --public-url ./ --out-file index.html",
-    "build": "yarn cache clean && rm -rf build && yarn build:parcel"
+    "build": "yarn cache clean && rm -rf build && yarn build:parcel",
+    "csscomb": "csscomb src",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint --fix src/**/*.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.css": ["csscomb --tty-mode --", "git add"],
+    "*.sass": ["csscomb --tty-mode --", "git add"],
+    "*.js":[ "eslint --fix", "git add"]
   },
   "dependencies": {
     "@babel/preset-react": "^7.7.4",
@@ -18,6 +31,9 @@
     "@babel/core": "^7.7.7",
     "cssnano": "^4.1.10",
     "pug": "^2.0.4",
-    "sass": "^1.24.0"
+    "sass": "^1.24.0",
+    "csscomb": "^4.3.0",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.5.0"
   }
 }
