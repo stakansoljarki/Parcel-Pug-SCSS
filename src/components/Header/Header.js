@@ -1,1 +1,3 @@
-console.log("header");
+export const header = () => {
+  console.log("header");
+};

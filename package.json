@@ -19,16 +19,12 @@
     }
   },
   "lint-staged": {
-    "*.css": [
-      "csscomb --tty-mode --",
+    "*.pug": [
+      "yarn prettify-pug:fix",
       "git add"
     ],
     "*.sass": [
       "csscomb --tty-mode --",
-      "git add"
-    ],
-    "*.pug": [
-      "yarn prettify-pug:fix",
       "git add"
     ],
     "*.js": [
