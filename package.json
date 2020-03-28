@@ -2,7 +2,7 @@
   "name": "parcel-pug-scss",
   "version": "1.0.0",
   "license": "MIT",
-  "main": "src/pages/Home/Home.pug",
+  "main": "",
   "scripts": {
     "build": "yarn cache clean && rm -rf build && yarn build:parcel",
     "build:parcel": "parcel build src/pages/Home/Home.pug -d build --public-url ./ --out-file index.html",
@@ -32,7 +32,6 @@
   "dependencies": {
     "@babel/preset-react": "^7.9.4",
     "autoprefixer": "^9.7.5",
-    "parsel": "^0.3.0",
     "postcss-modules": "^1.4.1"
   },
   "devDependencies": {
@@ -44,6 +43,7 @@
     "husky": "^3.1.0",
     "lint-staged": "^10.0.9",
     "parcel-bundler": "^1.12.4",
+    "parsel": "^0.3.0",
     "prettier": "^1.19.1",
     "pug": "^2.0.4",
     "sass": "^1.24.0",

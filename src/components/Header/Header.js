@@ -1,3 +1,3 @@
-export const header = () => {
-  console.log("header");
+export const Header = () => {
+  console.log("Header");
 };
