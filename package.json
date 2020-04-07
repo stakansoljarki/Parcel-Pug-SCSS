@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@babel/preset-react": "^7.9.4",
-    "autoprefixer": "^9.7.5",
+    "autoprefixer": "^9.7.6",
     "postcss-modules": "^1.4.1"
   },
   "devDependencies": {
