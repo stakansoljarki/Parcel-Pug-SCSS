@@ -47,6 +47,6 @@
     "prettier": "^2.0.4",
     "pug": "^2.0.4",
     "sass": "^1.24.0",
-    "sort-package-json": "^1.40.0"
+    "sort-package-json": "^1.41.0"
   }
 }
