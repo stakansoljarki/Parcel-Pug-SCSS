@@ -35,7 +35,7 @@
     "postcss-modules": "^2.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0",
+    "@babel/core": "^7.9.6",
     "@prettier/plugin-pug": "^1.2.0",
     "csscomb": "^4.3.0",
     "cssnano": "^4.1.10",
